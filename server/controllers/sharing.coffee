@@ -6,10 +6,10 @@ clearance = require 'cozy-clearance'
 async = require 'async'
 fs = require 'fs'
 
-localization = require '../lib/localization_manager'
+#localization = require '../lib/localization_manager'
 
-templatefile = require('path').join __dirname, '../views/sharemail.jade'
-mailTemplate = notiftemplate = localization.getEmailTemplate 'sharemail.jade'
+#templatefile = require('path').join __dirname, '../views/sharemail.jade'
+#mailTemplate = notiftemplate = localization.getEmailTemplate 'sharemail.jade'
 
 clearanceCtl = clearance.controller
     mailTemplate: (options, callback) ->

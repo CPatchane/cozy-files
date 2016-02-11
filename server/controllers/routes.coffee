@@ -2,7 +2,7 @@
 index = require './index'
 files = require './files'
 folders = require './folders'
-sharing = require './sharing'
+#sharing = require './sharing'
 public_auth = require '../middlewares/public_auth'
 
 module.exports =
@@ -62,20 +62,20 @@ module.exports =
     'search/content':
         post: folders.searchContent
 
-    # clearance
-    'shareid':
-        param: sharing.fetch
-    'clearance/contacts':
-        get: sharing.contactList
-    'clearance/contacts/:contactid.jpg':
-        get: sharing.contactPicture
-    'clearance/contacts/:contactid':
-        get: sharing.contact
-    'clearance/:shareid':
-        get: sharing.details
-        put: sharing.change
-    'clearance/:shareid/send':
-        post: sharing.sendAll
+    ## clearance
+    #'shareid':
+        #param: sharing.fetch
+    #'clearance/contacts':
+        #get: sharing.contactList
+    #'clearance/contacts/:contactid.jpg':
+        #get: sharing.contactPicture
+    #'clearance/contacts/:contactid':
+        #get: sharing.contact
+    #'clearance/:shareid':
+        #get: sharing.details
+        #put: sharing.change
+    #'clearance/:shareid/send':
+        #post: sharing.sendAll
 
     # public access
     'public/folders':
